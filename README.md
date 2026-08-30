@@ -1,7 +1,7 @@
 # snakeGame
 A classic **Snake Game built using Python Turtle Graphics**.
 The player controls the snake using the arrow keys, collects food to increase the score, and must avoid hitting the walls or itself.
-
+ 
 ## 🎮 Features
 
 * ⬆️⬇️⬅️➡️ Arrow key controls
