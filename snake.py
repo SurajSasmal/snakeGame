@@ -90,18 +90,14 @@ sc.onkeypress(right, "Right")
 # Snake body
 seg = []
 
-# -------------------------
 # Main game loop
-# -------------------------
 
 while run:
 
     try:
         sc.update()
 
-        # -------------------------
         # Wall collision
-        # -------------------------
 
         if abs(h.xcor()) > 290 or abs(h.ycor()) > 290:
 
@@ -125,9 +121,7 @@ while run:
                 font=("candara", 24, "bold")
             )
 
-        # -------------------------
         # Food collision
-        # -------------------------
 
         if h.distance(f) < 20:
 
@@ -161,9 +155,7 @@ while run:
                 font=("candara", 24, "bold")
             )
 
-        # -------------------------
         # Move snake body
-        # -------------------------
 
         for i in range(len(seg) - 1, 0, -1):
 
@@ -179,9 +171,7 @@ while run:
         # Move head
         move()
 
-        # -------------------------
         # Self collision
-        # -------------------------
 
         for segment in seg[1:]:
 
